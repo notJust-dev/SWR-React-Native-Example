@@ -1,0 +1,11 @@
+type RootEntry {
+  body: String
+  id: Int
+  title: String
+  userId: Int
+}
+
+type Query {
+  myQuery: [RootEntry]
+    @rest(endpoint: "https://jsonplaceholder.typicode.com/posts")
+}

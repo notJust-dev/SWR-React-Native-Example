@@ -1,6 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, SafeAreaView, Button } from 'react-native';
+
+import GraphQLPostsScreen from './src/app/GraphQLPostsScreen';
 import PostsScreen from './src/app/PostsScreen';
+
 import { SWRConfig } from 'swr';
 import { fetcher } from './src/utils/fetcher';
 
@@ -8,7 +11,7 @@ export default function App() {
   return (
     <SWRConfig value={{ fetcher, dedupingInterval: 2000 }}>
       <SafeAreaView style={styles.container}>
-        <PostsScreen />
+        <GraphQLPostsScreen />
 
         <StatusBar style="auto" />
       </SafeAreaView>
