@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, SafeAreaView } from 'react-native';
+import { StyleSheet, SafeAreaView, Button } from 'react-native';
 import PostsScreen from './src/app/PostsScreen';
 import { SWRConfig } from 'swr';
 import { fetcher } from './src/utils/fetcher';
